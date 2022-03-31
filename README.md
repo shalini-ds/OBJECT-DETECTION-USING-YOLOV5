@@ -58,7 +58,7 @@ Training a model to detect cars and persons in an image.
 ## Training
 * A YOLOv5l model pretrained on COCO128 was used to apply transfer learning, by specifying the custom dataset, batch-size, image size. (Weights can be randomly initialized --weights '' --cfg yolov5s.yaml). Pretrained weights are auto-downloaded from the latest YOLOv5 release.
 
-* Please refer to the [Colab Training Jupyter Notebook](https://colab.research.google.com/drive/12Q8PYt3pTlNpQwrxM82K5btkOgsXiDwJ?usp=sharing)
+* Please refer to the [Colab Training Jupyter Notebook](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/commit/52912abeaf64fc05827167aa84725a9756528b4b)
 * Ultralytics YOLOv5 public repo was cloned and all the dependencies were set up.
 
 ## Inference Code
