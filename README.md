@@ -71,9 +71,29 @@ Training a model to detect cars and persons in an image.
 * Since the free version of colab has limited threshold for inactivity as well as limited compute time, the model trained for ***10 epochs***. As expected, the performance deteriorates on unseen intersections, but the quality of the detection remains excellent to the human eye, as shown below for the small model. With the ***IoU threshold of 0.5*** the model achieved an **mAP:75%** The model did draw very nice bounding boxes, but for higher IoU thresholds, mAP as well as the clasification precision can be improved.
 * False positives can definitely be improved with further training.
 * The follwoing image represents the image status is the status obtained on the <br />
+* ![Im1](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Graphs/PR_curve.png)
+![Im1](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Graphs/results.png)
 
 
-
-## Output on the Validation Set from the [output Images folder](https://github.com/keshavgarg139/car-person-detection/tree/main/predictions)
+## Output on the Validation Set from the [output Images folder](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/tree/Shalini/Output-Results)
 * The format on the bounding boxes is (label, confidence)
 * The IoU threshold was set as 0.5 as the model was trained for a very small amount of time, and mAP of 74.5% was achieved.
+* <table border="0">
+  <tr>
+    <td>LABELS</td>
+    <td>PREDICTIONS</td>
+  </tr>
+ <tr>
+    <td>
+<img src="https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Output-Results/labels1.jpg"></td>
+    <td><img src="https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Output-Results/prediction1.jpg"></td>
+ </tr>
+ <tr>
+    <td><img src="https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Output-Results/labels2.jpg"></td>
+    <td><img src="https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Output-Results/prediction2.jpg"></td>
+ </tr>
+ <tr>
+    <td><img src="https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Output-Results/labels3.jpg"></td>
+    <td><img src="https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Output-Results/prediction3.jpg"></td>
+ </tr>  
+</table>
