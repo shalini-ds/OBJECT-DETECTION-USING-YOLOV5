@@ -1,5 +1,9 @@
 # OBJECT-DETECTION-USING-YOLOV5
-Training a model to detect cars and persons in an image. 
+# Training a model to detect two objects that is cars and persons in an image.
+
+Object Detection is one of the fundamental tasks in computer vision with applications ranging across medicine, robotics, and many others.
+In this task, the dataset consists of images containing people and cars.
+The goal of this task is to train a model that can localize and classify each instance of person and car as accurately as possible.
 
 --------------------------------------------------------------------------------------------
 
@@ -13,6 +17,8 @@ Training a model to detect cars and persons in an image.
 ## Model Overview
 * YOLO an acronym for 'You only look once', is an object detection algorithm that divides images into a grid system. Each cell in the grid is responsible for detecting objects within itself.
 * YOLO is one of the most famous object detection algorithms due to its speed and accuracy. **YoloV5** is used to train the model.
+
+--------------------------------------------------------------------------------------------
 
 ## YOLO v5 Model Architecture
 *As YOLO v5 is a single-stage object detector, it has three important parts like any other single-stage object detector.*
@@ -39,7 +45,6 @@ Training a model to detect cars and persons in an image.
 
 --------------------------------------------------------------------------------------------
 
-
 ## Preprocessing Stage
 
 * There were two things as inputs 1) Annotations Json 2) Images folder
@@ -52,7 +57,6 @@ Training a model to detect cars and persons in an image.
 3. Box coordinates must be in normalized xywh format (from 0 - 1). If your boxes are in pixels, divide x_center and width by image width, and y_center and height by image height.
 4. Class numbers are zero-indexed (start from 0). 
 
-
 --------------------------------------------------------------------------------------------
 
 ## Training
@@ -61,11 +65,14 @@ Training a model to detect cars and persons in an image.
 * Please refer to the [Colab Training Jupyter Notebook](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Code-Files/object_detection_YOLOV5.ipynb)
 * Ultralytics YOLOv5 public repo was cloned and all the dependencies were set up.
 
-## Inference Code
 --------------------------------------------------------------------------------------------
 
-* After training following is the report obtained from evaluation on ***VALIDATION SET***.
+## Inference Code
 
+* After training following is the report obtained from evaluation on ***VALIDATION SET***.
+![Im1](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Output-Results/Validation.jpeg)
+
+--------------------------------------------------------------------------------------------
 
 ## Observations
 * Since the free version of colab has limited threshold for inactivity as well as limited compute time, the model trained for ***10 epochs***. As expected, the performance deteriorates on unseen intersections, but the quality of the detection remains excellent to the human eye, as shown below for the small model. With the ***IoU threshold of 0.5*** the model achieved an **mAP:75%** The model did draw very nice bounding boxes, but for higher IoU thresholds, mAP as well as the clasification precision can be improved.
@@ -74,6 +81,7 @@ Training a model to detect cars and persons in an image.
 * ![Im1](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Graphs/PR_curve.png)
 ![Im1](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Graphs/results.png)
 
+--------------------------------------------------------------------------------------------
 
 ## Output on the Validation Set from the [output Images folder](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/tree/Shalini/Output-Results)
 * The format on the bounding boxes is (label, confidence)
