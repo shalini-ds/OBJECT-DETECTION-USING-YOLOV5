@@ -77,7 +77,7 @@ The goal of this task is to train a model that can localize and classify each in
 ## Observations
 * Since the free version of colab has limited threshold for inactivity as well as limited compute time, the model trained for ***10 epochs***. As expected, the performance deteriorates on unseen intersections, but the quality of the detection remains excellent to the human eye, as shown below for the small model. With the ***IoU threshold of 0.5*** the model achieved an **mAP:75%** The model did draw very nice bounding boxes, but for higher IoU thresholds, mAP as well as the clasification precision can be improved.
 * False positives can definitely be improved with further training.
-* The follwoing image represents the image status is the status obtained on the <br />
+* The following image represents the image status is the status obtained on the <br />
 * ![Im1](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Graphs/PR_curve.png)
 ![Im1](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/blob/Shalini/Graphs/results.png)
 
