@@ -86,7 +86,7 @@ The goal of this task is to train a model that can localize and classify each in
 ## Output on the Validation Set from the [output Images folder](https://github.com/shalini-ds/OBJECT-DETECTION-USING-YOLOV5/tree/Shalini/Output-Results)
 * The format on the bounding boxes is (label, confidence)
 * The IoU threshold was set as 0.5 as the model was trained for a very small amount of time, and mAP of 74.5% was achieved.
-* <table border="0">
+ <table border="0">
   <tr>
     <td>LABELS</td>
     <td>PREDICTIONS</td>
